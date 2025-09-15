@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import LoadingPage from "./loading";
 
 export default function DashboardPage({
   children,
@@ -16,7 +17,7 @@ export default function DashboardPage({
     if (!user && !authLoading) router.push("/login"); // redirect if not logged in
   }, [user, router]);
 
-  if (authLoading) return <p>Loading...</p>;
+  if (authLoading) return <LoadingPage/>
 
   return (
     <main className="mx-auto container  p-5" >

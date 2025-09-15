@@ -70,9 +70,9 @@ enum Purpose {
 }
 
 enum Timeline {
-  Within_0_3m    @map("0_3m")
-  Within_3_6m    @map("3_6m")
-  GreaterThan_6m @map("gt_6m")
+  Within_0_3m    @map("0-3m")
+  Within_3_6m    @map("3-6m")
+  GreaterThan_6m @map("gt-6m")
   Exploring
 }
 

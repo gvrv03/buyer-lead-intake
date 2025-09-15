@@ -25,7 +25,6 @@ interface Buyer {
   preApproved?: boolean;
 }
 
-export const dynamic = "force-dynamic"; // SSR
 
 async function fetchBuyer(id: string): Promise<Buyer | null> {
   const { data, error } = await supabase.from("Buyer").select("*").eq("id", id).single();
@@ -163,3 +162,5 @@ interface BuyerPageProps {
     );
   }
   
+  export const dynamic = "force-dynamic"; // SSR
+  export const revalidate = 0;
