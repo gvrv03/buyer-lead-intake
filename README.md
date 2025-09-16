@@ -53,14 +53,15 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/buyerlead-pro.git
 cd buyerlead-pro
+```
 
-
-```bash
+## ⚡ Environment Variable
+```
 DATABASE_URL=your_database_connection_url
 DIRECT_URL=your_direct_connection_url
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-
+```
 
 
 
